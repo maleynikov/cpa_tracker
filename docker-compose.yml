@@ -1,0 +1,17 @@
+version: '2'
+services:
+  php:
+    container_name: cpa-test-php
+    build: ./php
+    volumes:
+      - ./app:/app
+    working_dir: /app
+  web:
+    container_name: cpa-test-nginx
+    build: ./nginx
+    volumes:
+      - ./app:/app
+    depends_on:
+      - php
+    ports:
+      - 80:80
