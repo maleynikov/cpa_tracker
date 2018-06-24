@@ -1,0 +1,502 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html,
+body {
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by its height */
+    margin: 0 auto -60px;
+    /* Pad bottom by footer height */
+    padding: 0 0 60px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+    height: 60px;
+    background-color: #f5f5f5;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */    
+.color-white{
+    color:#ffffff;
+}
+
+.container .credit {
+    margin: 20px 0;
+}
+
+.hidden_block{
+    display:none;
+}
+.invisible{
+    visibility: hidden;
+}
+
+.list-group-item.active{
+    background-color: #e7e7e7 !important;
+    border-color: #e7e7e7 !important;
+    color:#555 !important;
+}
+
+.no-hover:hover{
+    text-decoration:none;
+}
+
+i.b-favicon-os{margin-left:3px;}
+.b-favicon-os{background-repeat:no-repeat;background-position:0 0px;width:16px;height:16px;display:inline-block;margin-bottom:-4px; min-width:16px;}
+i.b-favicon-os-linux{background-image:url('../img/platforms/linux.gif');}
+i.b-favicon-os-apple{background-image:url('../img/platforms/macos.gif');}
+i.b-favicon-os-blackberry{background-image:url('../img/platforms/blackberry.png');}
+i.b-favicon-os-android{background-image:url('../img/platforms/android.png');}
+i.b-favicon-os-ipad{background-image:url('../img/platforms/ipad.png');}
+i.b-favicon-os-iphone{background-image:url('../img/platforms/iphone.png');}
+i.b-favicon-os-windowsxp{background-image:url('../img/platforms/windowsxp.png');}
+i.b-favicon-os-windows7{background-image:url('../img/platforms/windows7.gif');}
+i.b-favicon-os-windows8{background-image:url('../img/platforms/windows8.png');}
+
+.icon-ip {
+    background-image: url("../img/icons/ip.gif") !important;
+    background-position: center center !important;
+    height: 16px !important;
+    width: 16px !important;
+    vertical-align: baseline !important;
+}
+
+.ui-autocomplete {
+    padding: 0;
+    list-style: none;
+    background-color: #fff;
+    width: 218px;
+    border: 1px solid #B0BECA;
+    max-height: 350px;
+    overflow-y: scroll;
+}
+.ui-autocomplete .ui-menu-item a {
+    border-top: 1px solid #B0BECA;
+    display: block;
+    padding: 4px 6px;
+    color: #353D44;
+    cursor: pointer;
+}
+.ui-autocomplete .ui-menu-item:first-child a {
+    border-top: none;
+}
+.ui-autocomplete .ui-menu-item a.ui-state-hover {
+    background-color: #D5E5F4;
+    color: #161A1C;
+}
+.ui-autocomplete-input{
+}
+
+.rule_group
+{
+    clear:both;
+    width:450px;  position: relative;
+    margin: 0px 0;
+    margin-bottom: 20px;
+    padding: 10px 19px 0px;
+    *padding-top: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+
+.rule_group .controls {
+    text-align:right; border-top:1px dashed lightgray; padding-top:10px; margin-top:30px; margin-bottom: 20px;
+}
+.rule_group .controls a{
+    float:left; margin-top:10px;
+}
+.rule_group .rule_condition_value{
+    margin-bottom: 20px;
+}
+.rule_group .rule_condition_value .all_countries{
+    width:152px; display:inline-block; margin-left:24px; float:left;
+    color:darkblue;
+    cursor: default;
+}
+.rule_group .rule_condition_value .arrow{
+    margin:0px 10px 0px 5px;
+}
+.rule_group .rule_condition_value .select2{
+    width:230px;
+}
+.rule_group .rule_condition_value .close{
+    float:left; margin-right:10px;  margin-top:1px;
+}
+
+.rule_group .rule_link_name i{
+    cursor: pointer;
+}
+.rule_group .rule_link_name input[type=text]
+{
+    border:none; padding:0;
+    background: none;
+    -webkit-box-shadow:none;
+    font-weight: bold;
+}
+
+.rule_group .country-selector{
+    border:1px solid white;
+    width:150px;
+}
+
+.rule_group .rule_value{
+    margin-top:10px;
+}
+
+/* Remove spacing between an example and it's code */
+.rule_group + .prettyprint {
+    margin-top: -20px;
+    padding-top: 15px;
+}
+.rule_container{
+    display:none;
+}
+
+#system_rule_select{
+    display:none;
+}
+.select_s2{
+    margin-left:-4px;
+}
+
+#form_add_rule{
+    margin-bottom: 50px;
+}
+#form_add_rule .select2{
+    width:230px;
+}
+
+.sales, .epc, .rub, .conversion, .roi, .leads, #rt_leadprice_button{
+    display:none;
+}
+
+.report_grouped_menu .btn{
+    border:none;
+    color:#428bca;
+}
+.report_grouped_menu .btn.active{
+    background-color: #428bca; 
+    color: white;
+}
+
+/* Rules page CSS
+-------------------------------------------------- */    
+.rules_table{
+    margin-bottom: 30px;
+}
+.rules_table div.cell{
+    padding:8px;
+}
+.rules_table .row.row_caption:hover{
+    background-color: linen !important;
+    cursor: pointer;
+}
+.clipboard_cell {
+    margin-left:0px;
+    padding:0px !important;
+}
+.clipboard_cell .btn{width:60px;}
+.clipboard_cell:hover{
+    background: #3b83f6;
+}
+.clipboard_cell:hover .btn{
+    color: white;
+    text-decoration: none;
+}
+.label{
+    font-size: 100%;
+    font-weight: normal;
+}
+button.close{
+    margin-right: 10px;
+}
+
+.dropdown-toggle .caret{
+    border-bottom-color: gray;
+    border-top-color: gray;
+}
+.bl_gray{border-bottom:1px solid lightgray;}
+.header_selected{background-color:linen; border-bottom: 1px solid lightgray; border-left:1px solid lightgray; border-right:1px solid lightgray; border-top: 1px solid lightgray;}
+.caret.caret-right {border-left: 4px solid black; border-right: 0; border-top: 4px solid transparent; border-bottom: 4px solid transparent;}
+.rule_left_dropdown {
+    left: -9px;
+    width:20px;
+}
+.rule_left_dropdown .btn{
+    padding-left:10px;
+    padding-right:10px;
+}
+
+/* Login Form CSS */
+.form-signin
+{
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-signin .form-signin-heading, .form-signin .checkbox
+{
+    margin-bottom: 10px;
+}
+.form-signin .checkbox
+{
+    font-weight: normal;
+}
+.form-signin .form-control
+{
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form-signin .form-control:focus
+{
+    z-index: 2;
+}
+.form-signin input[type="text"]
+{
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"]
+{
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.account-wall
+{
+    margin-top: 20px;
+    padding: 40px 0px 20px 0px;
+    background-color: #f7f7f7;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.login-title
+{
+    color: #555;
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+}
+.profile-img
+{
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.need-help
+{
+    margin-top: 10px;
+}
+.new-account
+{
+    display: block;
+    margin-top: 10px;
+}
+
+
+/* Links page CSS
+-------------------------------------------------- */    
+.links_row:hover .links_menu, .links_row.hover .links_menu { visibility: visible; }
+.links_menu {
+    float:right;
+    visibility: hidden;
+}
+.category_title{
+    margin-bottom: 20px;
+    cursor:pointer;
+}
+.category_title i{
+    visibility: hidden;
+}
+.category_title:hover i{
+    visibility: visible;
+}
+.category_title span.category_name{
+    font-size:20px; 
+    font-weight:bold;
+}
+.category_edit{
+    margin-bottom: 20px;
+    display: none;
+}
+
+
+/* Links sidebar CSS
+-------------------------------------------------- */    
+div.links_category_add hr{
+    margin-bottom:10px;
+}
+div.links_category_add{
+    text-align: left;
+    width:100%;
+    clear: both;
+}
+
+.links_category_add_form{
+    display:none;
+    padding-left:7px;
+    margin-top:10px;
+}
+
+div.links_category_add span {
+    margin-left: 13px;
+    margin-top: 0px;
+    padding-top: 0px;   
+}
+#categories_left_menu_list .category_name{
+    float:left;
+} 
+#categories_left_menu_list .category_count{
+    float:right;
+    font-family: "Courier New", monospace;
+}
+#categories_left_menu_list .category_line{
+    clear:both;
+}
+
+/* Left Sidebar Affix Menu CSS
+-------------------------------------------------- */    
+.bs-sidebar.affix {
+    position: static;
+}
+
+/* First level of nav */
+.bs-sidenav {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    padding-top:    10px;
+    padding-bottom: 10px;
+    text-shadow: 0 1px 0 #fff;
+    background-color: #f7f5fa;
+    border-radius: 5px;
+}
+
+/* All levels of nav */
+.bs-sidebar .nav > li > a {
+    display: block;
+    color: #716b7a;
+    padding: 5px 20px;
+}
+.bs-sidebar .nav > li > a:hover,
+.bs-sidebar .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #e5e3e9;
+    border-right: 1px solid #dbd8e0;
+}
+.bs-sidebar .nav > .active > a,
+.bs-sidebar .nav > .active:hover > a,
+.bs-sidebar .nav > .active:focus > a {
+    font-weight: bold;
+    color: #563d7c;
+    background-color: transparent;
+    border-left: 1px solid #563d7c;
+}
+
+/* Nav: second level (shown on .active) */
+.bs-sidebar .nav .nav {
+    display: none; /* Hide by default, but at >768px, show it */
+    margin-bottom: 8px;
+}
+.bs-sidebar .nav .nav > li > a {
+    padding-top:    3px;
+    padding-bottom: 3px;
+    padding-left: 30px;
+    font-size: 90%;
+}
+
+/* Show and affix the side nav when space allows it */
+@media (min-width: 992px) {
+    .bs-sidebar .nav > .active > ul {
+        display: block;
+    }
+    /* Widen the fixed sidebar */
+    .bs-sidebar.affix,
+    .bs-sidebar.affix-bottom {
+        width: 213px;
+    }
+    .bs-sidebar.affix {
+        position: fixed; /* Undo the static from mobile first approach */
+        top: 80px;
+    }
+    .bs-sidebar.affix-bottom {
+        position: absolute; /* Undo the static from mobile first approach */
+    }
+    .bs-sidebar.affix-bottom .bs-sidenav,
+    .bs-sidebar.affix .bs-sidenav {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+@media (min-width: 1200px) {
+    /* Widen the fixed sidebar again */
+    .bs-sidebar.affix-bottom,
+    .bs-sidebar.affix {
+        width: 263px;
+    }
+}
+.net-btn {
+    min-width: 120px; 
+    margin-bottom: 5px;
+}
+#per_day_range {
+    background: #ffffff;
+    color: #333333;
+    padding: 8px;
+    line-height: 20px;
+    cursor: pointer;
+    margin-top: 16px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+table.dataTable td {
+    padding: 3px 18px 3px 10px !important;
+}
+.rt_types, .margin5rb {
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+table.dataTable td table.sparktable {
+	width: 100%;
+}
+table.dataTable td table.sparktable td {
+	padding: 0px !important;
+}
+th .sdata.lead {
+	font-weight: bold;
+	font-size: 14px;
+}
+.sdata {
+	white-space: nowrap;
+	display: none;
+}
+.sdata.lead {
+	font-size: 14px;
+}
+.hidecont {
+	display: none;
+}

@@ -1,0 +1,7 @@
+#php_flag display_errors off
+
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ track.php?track_request=$1 [L,QSA]

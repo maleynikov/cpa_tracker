@@ -1,0 +1,2 @@
+*/1 * * * * curl web:80/track-show/process_clicks.php
+*/1 * * * * curl web:80/track-show/process_postback.php

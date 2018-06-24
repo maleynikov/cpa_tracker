@@ -1,0 +1,128 @@
+i.b-favicon-os{margin-left:3px;}
+.b-favicon-os{background-repeat:no-repeat;background-position:0 0px;width:16px;height:16px;display:inline-block;margin-bottom:-4px; min-width:16px;}
+i.b-favicon-os-linux{background-image:url('../img/platforms/linux.gif');}
+i.b-favicon-os-apple{background-image:url('../img/platforms/macos.gif');}
+i.b-favicon-os-blackberry{background-image:url('../img/platforms/blackberry.png');}
+i.b-favicon-os-android{background-image:url('../img/platforms/android.png');}
+i.b-favicon-os-ipad{background-image:url('../img/platforms/ipad.png');}
+i.b-favicon-os-iphone{background-image:url('../img/platforms/iphone.png');}
+i.b-favicon-os-windowsxp{background-image:url('../img/platforms/windowsxp.png');}
+i.b-favicon-os-windows7{background-image:url('../img/platforms/windows7.gif');}
+i.b-favicon-os-windows8{background-image:url('../img/platforms/windows8.png');}
+
+.icon-ip {
+    background-image: url("../img/icons/ip.gif") !important;
+    background-position: center center !important;
+    height: 16px !important;
+    width: 16px !important;
+    vertical-align: baseline !important;
+}
+
+.ui-autocomplete {
+  padding: 0;
+  list-style: none;
+  background-color: #fff;
+  width: 218px;
+  border: 1px solid #B0BECA;
+  max-height: 350px;
+  overflow-y: scroll;
+}
+.ui-autocomplete .ui-menu-item a {
+  border-top: 1px solid #B0BECA;
+  display: block;
+  padding: 4px 6px;
+  color: #353D44;
+  cursor: pointer;
+}
+.ui-autocomplete .ui-menu-item:first-child a {
+  border-top: none;
+}
+.ui-autocomplete .ui-menu-item a.ui-state-hover {
+  background-color: #D5E5F4;
+  color: #161A1C;
+}
+.ui-autocomplete-input{
+}
+
+.rule_group
+{
+  clear:both;
+  width:450px;  position: relative;
+  margin: 0px 0;
+  margin-bottom: 20px;
+  padding: 10px 19px 0px;
+  *padding-top: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+
+.rule_group .controls {
+	text-align:right; border-top:1px dashed lightgray; padding-top:10px; margin-top:30px; margin-bottom: 20px;
+}
+.rule_group .controls a{
+	float:left; margin-top:10px;
+}
+.rule_group .rule_condition_value{
+	margin-bottom: 20px;
+}
+.rule_group .rule_condition_value .all_countries{
+	width:152px; display:inline-block; margin-left:24px; float:left;
+	color:darkblue;
+	cursor: default;
+}
+.rule_group .rule_condition_value .arrow{
+	margin:0px 10px 0px 5px;
+}
+.rule_group .rule_condition_value .select2{
+	width:230px;
+}
+.rule_group .rule_condition_value .close{
+	float:left; margin-right:10px;	margin-top:1px;
+}
+
+.rule_group .rule_link_name i{
+	cursor: pointer;
+}
+.rule_group .rule_link_name input[type=text]
+{
+	border:none; padding:0;
+	background: none;
+	-webkit-box-shadow:none;
+	font-weight: bold;
+}
+
+.rule_group .country-selector{
+	border:1px solid white;
+	width:150px;
+}
+
+.rule_group .rule_value{
+	margin-top:10px;
+}
+
+/* Remove spacing between an example and it's code */
+.rule_group + .prettyprint {
+  margin-top: -20px;
+  padding-top: 15px;
+}
+.rule_container{
+	display:none;
+}
+
+#system_rule_select{
+	display:none;
+}
+.select_s2{
+	margin-left:-4px;
+}
+
+#form_add_rule{
+	margin-bottom: 50px;
+}
+#form_add_rule .select2{
+	width:230px;
+}
