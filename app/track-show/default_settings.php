@@ -15,7 +15,10 @@
 	
 	define('_HTML_LIB_PATH',       '../track-common/' . _TRACK_VER . '/track-show/lib');
 	define('_HTML_TEMPLATE_PATH',  '../track-common/' . _TRACK_VER . '/track-show/templates');
-	define('SERVER_NAME', isset($_ENV['SERVER_NAME']) ? $_ENV['SERVER_NAME'] : $_SERVER['REQUEST_URI']);
+	define('SERVER_NAME', isset($_ENV['SERVER_NAME']));
+
+	echo SERVER_NAME;
+	die;
 
 	// Get full HTML url 
 	$s = (empty($_SERVER["HTTPS"]) && empty($_SERVER['HTTP_X_FORWARDED_PROTO'])) ? '' : ((!empty($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] == "on") || $_SERVER['HTTP_X_FORWARDED_PROTO']=='https' ) ? "s" : "";
