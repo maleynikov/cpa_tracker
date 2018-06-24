@@ -15,9 +15,10 @@
 	
 	define('_HTML_LIB_PATH',       '../track-common/' . _TRACK_VER . '/track-show/lib');
 	define('_HTML_TEMPLATE_PATH',  '../track-common/' . _TRACK_VER . '/track-show/templates');
-	define('SERVER_NAME', isset($_ENV['SERVER_NAME']));
+	define('SERVER_NAME', $_ENV['SERVER_NAME']);
 
-	echo SERVER_NAME;
+	echo $_ENV['SERVER_NAME'], PHP_EOL;
+    echo $_SERVER['SERVER_NAME'], PHP_EOL;
 	die;
 
 	// Get full HTML url 
