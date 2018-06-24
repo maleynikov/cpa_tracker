@@ -7,6 +7,7 @@ services:
     volumes:
       - ./app:/app
     working_dir: /app
+    command: "chmod 0777 /track/cache"
   web:
     container_name: cpa-nginx
     build: ./nginx
@@ -14,8 +15,11 @@ services:
       - ./app:/app
     depends_on:
       - php
+      - mysql
+      - redis
+      - cron
     ports:
-      - 80:80
+      - "80:80"
   mysql:
     container_name: cpa-mysql
     image: mysql:5.6.34
