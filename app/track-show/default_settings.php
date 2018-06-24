@@ -15,18 +15,13 @@
 	
 	define('_HTML_LIB_PATH',       '../track-common/' . _TRACK_VER . '/track-show/lib');
 	define('_HTML_TEMPLATE_PATH',  '../track-common/' . _TRACK_VER . '/track-show/templates');
-	define('SERVER_NAME', $_ENV['SERVER_NAME']);
-
-	echo $_ENV['SERVER_NAME'], PHP_EOL;
-    echo $_SERVER['SERVER_NAME'], PHP_EOL;
-	die;
 
 	// Get full HTML url 
 	$s = (empty($_SERVER["HTTPS"]) && empty($_SERVER['HTTP_X_FORWARDED_PROTO'])) ? '' : ((!empty($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] == "on") || $_SERVER['HTTP_X_FORWARDED_PROTO']=='https' ) ? "s" : "";
 	$protocol = substr(strtolower($_SERVER["SERVER_PROTOCOL"]), 0, strpos(strtolower($_SERVER["SERVER_PROTOCOL"]), "/")) . $s;
 	$port = ($_SERVER["SERVER_PORT"] == "80") ? "" : (":".$_SERVER["SERVER_PORT"]);
 	$port = '';
-	$uri = $protocol . "://" . SERVER_NAME . $port . $_SERVER['REQUEST_URI'];
+	$uri = $protocol . "://" . $_SERVER['HTTP_HOST'] . $port . $_SERVER['REQUEST_URI'];
 	$segments = explode('?', $uri, 2);
 	$url = $segments[0];
 	

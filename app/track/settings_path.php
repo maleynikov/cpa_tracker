@@ -27,7 +27,7 @@
     $s = (empty($_SERVER["HTTPS"]) && empty($_SERVER['HTTP_X_FORWARDED_PROTO'])) ? '' : ((!empty($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] == "on") || $_SERVER['HTTP_X_FORWARDED_PROTO']=='https' ) ? "s" : "";
 	$protocol = substr(strtolower($_SERVER["SERVER_PROTOCOL"]), 0, strpos(strtolower($_SERVER["SERVER_PROTOCOL"]), "/")) . $s;
 	$port = ($_SERVER["SERVER_PORT"] == "80") ? "" : (":".$_SERVER["SERVER_PORT"]);
-	$uri_root = $protocol . "://" . SERVER_NAME . $port;
+	$uri_root = $protocol . "://" . $_SERVER['HTTP_HOST'] . $port;
 	
 	define('_HTML_ROOT_PATH',      $uri_root . $delta_uri);
 	define('_HTML_TRACK_PATH',     $uri_root . $delta_uri . '/track');
