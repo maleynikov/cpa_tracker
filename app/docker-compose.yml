@@ -1,0 +1,17 @@
+version: '2'
+services:
+  php:
+    container_name: vultr-php
+    build: ../php
+    volumes:
+      - ./:/app
+    working_dir: /app
+  web:
+    container_name: vultr-nginx
+    build: ../nginx
+    volumes:
+      - ./:/app
+    depends_on:
+      - php
+    ports:
+      - 80:80
