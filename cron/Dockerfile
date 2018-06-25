@@ -15,4 +15,6 @@ RUN apt-get update && apt-get -y install \
      curl
 
 # Run the command on container startup
-CMD ["cron", "-f"]
+#CMD ["cron", "-f"]
+
+CMD cron -f

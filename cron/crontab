@@ -1,3 +1,3 @@
-*/1 * * * * curl web:80/track-show/process_clicks.php >/dev/null
-*/1 * * * * curl web:80/track-show/process_postback.php >/dev/null
+*/1 * * * * root curl web:80/track-show/process_clicks.php >/dev/null
+*/1 * * * * root curl web:80/track-show/process_postback.php >/dev/null
 #* * * * * root echo "test cron..." >> /var/log/cron.log 2>&1
