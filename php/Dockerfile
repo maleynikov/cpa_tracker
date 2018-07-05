@@ -4,3 +4,5 @@ RUN apk update --no-cache \
     && apk add --no-cache mysql-dev \
     && docker-php-ext-install mysqli \
     && docker-php-ext-enable mysqli
+
+ADD php-fpm.conf /etc/php5/php-fpm.conf
