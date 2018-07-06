@@ -28,9 +28,8 @@ services:
       - "3306:3306"
     environment:
       MYSQL_USER: root
-      #MYSQL_PASSWORD: 0000
+      MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: cpa_tracker
-      MYSQL_RANDOM_ROOT_PASSWORD: "no"
     volumes:
       - ./mysql/data:/var/lib/mysql
       - ./mysql/backups:/var/backups
