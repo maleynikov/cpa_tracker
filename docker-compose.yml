@@ -7,6 +7,7 @@ services:
     volumes:
       - ./app:/app
     working_dir: /app
+    user: www-data
 
   web:
     container_name: cpa-nginx
@@ -35,7 +36,7 @@ services:
       - ./mysql/backups:/var/backups
       - ./mysql/bin/backup.sh:/usr/local/bin/backup.sh
     command: mysqld --sql_mode=""
-    user: mysql # MacOS
+    user: mysql
 
   redis:
     container_name: cpa-redis
@@ -44,7 +45,7 @@ services:
       - "6379:6379"
     volumes:
       - ./redis/data:/data
-    user: redis # MacOS
+    user: redis
 
   cron:
     container_name: cpa-cron

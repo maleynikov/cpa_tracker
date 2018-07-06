@@ -5,4 +5,7 @@ RUN apk update --no-cache \
     && docker-php-ext-install mysqli \
     && docker-php-ext-enable mysqli
 
+RUN mkdir -p /var/log/php \
+    && chown www-data /var/log/php
+
 ADD php-fpm.conf /usr/local/etc/php-fpm.d/www.conf
